@@ -9,6 +9,7 @@
     "cSpell.enabled": true,
     "cSpell.language": "en",
     "cSpell.words": ["TeX", "LaTeX"],
+    "latex-workshop.formatting.latex": "latexindent",
     "[latex]": {
       "editor.quickSuggestions": { "other": true, "comments": false },
       "editor.defaultFormatter": "James-Yu.latex-workshop"
