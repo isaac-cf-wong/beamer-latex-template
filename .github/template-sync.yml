@@ -1,8 +1,7 @@
 files:
-  - ".gitignore"  # include
+  - ".gitignore" # include
   - ".github"
   - ".vscode"
-  - "tests/conftest.py"
   - ".pre-commit-config.yml"
   - "LICENSE"
   - "README.md"
