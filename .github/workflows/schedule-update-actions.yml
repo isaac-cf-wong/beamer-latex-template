@@ -9,13 +9,18 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest    
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
+        with:
+          # [Required] Access token with `workflow` scope.
+          token: ${{ secrets.PAT }}
+          
       - name: Run GitHub Actions Version Updater
         uses: saadmk11/github-actions-version-updater@v0.8.1
         with:
           # [Required] Access token with `workflow` scope.
-          token: ${{ secrets.WORKFLOW_TOKEN }}
+          token: ${{ secrets.PAT }}
           pull_request_title: "ci: Update GitHub Actions to Latest Version"
